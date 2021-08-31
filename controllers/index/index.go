@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-func Index(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
+func Index(ctx *gin.Context) {
+	ctx.JSON(http.StatusOK, gin.H{
 		"message": "hello world",
 	})
 }
